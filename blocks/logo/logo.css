@@ -1,0 +1,7 @@
+.logo {
+  background-position: center;
+  background-size: cover;
+  width: 183px;
+  height: 32px;
+  z-index: 2;
+}
