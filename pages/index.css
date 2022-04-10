@@ -16,8 +16,26 @@
 /*Cтили блока rotation*/
 @import url(../blocks/rotation/rotation.css);
 
+/*Cтили блока description*/
+@import url(../blocks/description/description.css);
+
+/*Cтили блока two-columns*/
+@import url(../blocks/two-columns/two-columns.css);
+@import url(../blocks/two-columns/__brief/two-columns__brief.css);
+@import url(../blocks/two-columns/__main-text/two-columns__main-text.css);
+@import url(../blocks/two-columns/__paragraph/two-columns__paragraph.css);
+@import url(../blocks/two-columns/__span-accent/two-columns__span-accent.css);
+
 /*Cтили блока techniques*/
 @import url(../blocks/techniques/techiques.css);
+
+/*Cтили блока section-title*/
+@import url(../blocks/section-title/section-title.css);
+@import url(../blocks/section-title/section-title_theme_dark.css);
+
+/*Cтили блока section-subtitle*/
+@import url(../blocks/section-subtitle/section-subtitle.css);
+@import url(../blocks/section-subtitle/_theme_dark/section-subtitle_theme_dark.css);
 
 /*Cтили блока cards*/
 @import url(../blocks/cards/cards.css);
@@ -34,6 +52,22 @@
 /*Cтили блока oakley*/
 @import url(../blocks/oakley/oakley.css);
 
+/*Cтили блока feynman*/
+@import url(../blocks/feynman/feynman.css);
+@import url(../blocks/feynman/__title/feynman__title.css);
+@import url(../blocks/feynman/__subtitle/feynman__subtitle.css);
+@import url(../blocks/feynman/__link/feynman__link.css);
+
+/*Cтили блока digits*/
+@import url(../blocks/digits/digits.css);
+
+/*Cтили блока table*/
+@import url(../blocks/table/table.css);
+@import url(../blocks/table/__cell/table__cell.css);
+@import url(../blocks/table/__cell/_theme_dark/table__cell_theme_dark.css);
+@import url(../blocks/table/__heading/table__heading.css);
+@import url(../blocks/table/__text/table__text.css);
+
 /*Cтили блока khan*/
 @import url(../blocks/khan/khan.css);
 @import url(../blocks/khan/__container/khan__container.css);
@@ -46,7 +80,9 @@
 @import url(../blocks/khan/__book-pic/khan__book-pic.css);
 @import url(../blocks/khan/__buy-link/khan__buy-link.css);
 
-
+/*Cтили блока kaufman*/
+@import url(../blocks/kaufman/kaufman.css);
+@import url(../blocks/kaufman/__triangle/kaufman__triangle.css);
 
 /*Cтили блока resources*/
 @import url(../blocks/resources/resources.css);
@@ -54,208 +90,19 @@
 @import url(../blocks/resources/__link/resources__link.css);
 @import url(../blocks/resources/__logo/resources__logo.css);
 
+/*Cтили блока footer*/
+@import url(../blocks/footer/footer.css);
+@import url(../blocks/footer/__author/footer__author.css);
+@import url(../blocks/footer/__columns/footer__columns.css);
 
 
-.description {
-  padding: 100px 0 0;
-  display: flex;
-  justify-content: center;
-  align-items: baseline;
-}
 
 
-.two-columns {
-  display: flex;
-  justify-content: space-between;
-  width: 80%;
-}
 
-.two-columns__brief {
-  width: 175px;
-  font-size: 18px;
-  font-weight: normal;
-  line-height: 1.2;
-  color: #2f80ed;
-  margin: 0;
-  padding: 0;
- }
 
-.two-columns__main-text {
-  width: 80%;
-  min-width: 784px;
- }
 
-.two-columns__paragraph {
-  margin: 0;
-  font-size: 24px;
-  font-weight: normal;
-  line-height: 34px;
- }
- .two-columns__paragraph:nth-of-type(2) {
-  margin: 30px 0;
- }
 
-.two-columns__span-accent {
-  font-weight: bold;
- }
 
-.digits{
-  padding: 100px 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-} 
-
-.section-title {
-  width: 60%;
-  margin: 0;
-  text-align: center;
-  font-size: 60px;
-  font-weight: 600;
-  line-height: 1.15;
-}
-
-.section-title_theme_dark {
-  color: white;
-  z-index: 2;
-}
-
-.section-subtitle {
-  margin: 20px 0 0;
-  width: 60%;
-  text-align: center;
-  font-size: 24px;
-  font-weight: normal;
-  line-height: 34px;
-}
-
-.section-subtitle_theme_dark {
-  color: white;
-  z-index: 2;
-}
-
-.table {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-  display: flex;
-  width: 1100px;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-
-.table__cell {
-  width: 250px;
-  margin: 60px 0 0;
-}
-
-.table__cell_theme_dark {
-  width: 200px;
-  color: white;
-  margin-right: 0;
-  margin-top: 80px;
-  z-index: 2;
-}
-
-.table__heading {
-  margin: 0;
-  font-size: 24px;
-  font-weight: 600;
-  line-height: 1.15;
-}
-
-.table__text{
-  margin: 20px 0 0;
-  font-size: 18px;
-  font-weight: normal;
-  line-height: 1.2;
-}
-
-.kaufman {
-  position: relative;
-  overflow: hidden;
-  padding: 90px 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color: #1f1f1f;
-}
-
-.kaufman__triangle {
-  position: absolute;
-  top: 0;
-  right: -210px;
-  width: 877px;
-  height: 877px;
-  background-image: url(../images/kaufman-triangle.svg);
-  background-position: center;
-  background-size: cover;
-  z-index: 0;
-}
-
-.feynman {
-  position: relative;
-  min-height: 890px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color: #f2f2f2;
-  background-image: url(../images/feynman.png);
-  background-repeat: no-repeat;
-  background-size: 867px 637px contain;
-  background-position: left bottom;
-}
-
-.feynman__title {
-  width: 648px;
-  margin: 100px 0 0;
-  text-align: center;
-  font-size: 120px;
-  font-weight: 600;
-  line-height: 1.15;
-}
-
-.feynman__subtitle {
-  margin: 70px 0 0;
-  font-size: 36px;
-  font-weight: normal;
-  line-height: 51px;
-}
-
-.feynman__link {
-  margin: 0;
-  position: absolute;
-  top: 50%;
-  right: 48px;
-  font-size: 36px;
-  font-weight: normal;
-  line-height: 51px;
-  text-decoration: none;
-  color: #2f80ed;
-}
-
-.footer {
-  padding: 60px 0 40px;
-  min-height: 350px;
-  box-sizing: border-box;
-  display: flex;
-  justify-content: center;
-  background-color: #1f1f1f;
-  color: white;
-}
-
-.footer__author {
-  margin: 18px 0;
-  font-size: 18px;
-  font-weight: normal;
-  line-height: 25px;
-}
-
-.footer__columns {
-  display: flex;
-  justify-content: space-between;
-  width: 90%;
-}
 
 .footer__column-heading {
   margin: 0;
