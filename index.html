@@ -3,7 +3,6 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="vendor/normalize.css">
   <link rel="stylesheet" href="pages/index.css">
   <title>Научиться учиться</title>
 </head>
@@ -65,10 +64,10 @@
       <section class="video">
         <h2 class="section-title">Видео на TED</h2>
         <p class="section-subtitle">Для тех, кто любит прокрастинировать</p>
-        <div class="video__iframes">
-            <iframe class="video__iframe" width="515" height="316" src="https://www.youtube.com/embed/5MgBikgcWnY" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            <iframe class="video__iframe" width="515" height="316" src="https://www.youtube.com/embed/arj7oStGLkU" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </div>
+        <ul class="video__iframes">
+            <li class="video__iframe"><iframe class="video__item" src="https://www.youtube.com/embed/5MgBikgcWnY" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></li>
+            <li class="video__iframe"><iframe class="video__item" src="https://www.youtube.com/embed/arj7oStGLkU" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></li>
+        </ul>
       </section>
 
       <section class="oakley">
@@ -128,10 +127,10 @@
       </section>
 
       <section class="khan">
-        <article class="khan__container">
+        <div class="khan__container">
           <p class="khan__author">Салман Хан</p>
           <h2 class="khan__title">Весь мир — школа</h2>
-          <blockquote>
+          <blockquote class="khan__quote-container">
             <p class="khan__quote">Страсть и новаторство Сала Хана меняют процесс обучения миллионов студентов по всему миру. Книгу «Весь мир — школа» нужно прочитать всем, кто занимается образованием — так учащиеся повсюду смогут получить навыки и знания, которые приносят успех в школе, карьере и жизни.</p>
             <footer>
               <p class="khan__quote-author">Джордж Лукас</p>
@@ -142,13 +141,13 @@
             <img class="khan__book-pic" alt="Книга Салмана Хана «Весь мир — школа»" src="images/khan-book.jpg">
             <a href="#" class="khan__buy-link link-opacity">Купить книгу &rarr;</a>
           </div>
-        </article>
+        </div>
       </section>
 
       <section class="kaufman">
         <h2 class="section-title section-title_theme_dark">Принципы обучения</h2>
         <p class="section-subtitle section-subtitle_theme_dark">от Джоша Кауфмана</p>
-        <ul class="table">
+        <ol class="table">
           <li class="table__cell table__cell_theme_dark">
             <h3 class="table__heading">1</h3>
             <p class="table__text">Выберите привлекательный проект.</p>
@@ -189,7 +188,7 @@
             <h3 class="table__heading">10</h3>
             <p class="table__text">Уделяйте внимание количеству и скорости.</p>
           </li>
-        </ul>
+        </ol>
         <div class="kaufman__triangle rotation"></div>
       </section>
 
